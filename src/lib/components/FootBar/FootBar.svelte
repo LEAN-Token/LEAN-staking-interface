@@ -8,7 +8,7 @@
 		cord: 'https://discord.gg/NRg34Rawc6',
 		xapp: 'https://x.com/pls_lean',
 		chart: 'https://dexscreener.com/pulsechain/0x9961c2652b301c4a25256db05316d2be11cebab1',
-		swap: 'https://app.pulsex.com/swap?outputCurrency=0x1c9b5e57AA89f8b58CA28249E347A6C933726449',
+		swap: 'https://bafybeihiwe3inbfru7h6pesaj4siacbyx7t6o5qp3vwdz25n3p6ewlbnie.ipfs.dweb.link/#/?outputCurrency=0x1c9b5e57AA89f8b58CA28249E347A6C933726449',
 		explorer: 'https://scan.pulsechain.com/address/0x1c9b5e57AA89f8b58CA28249E347A6C933726449',
 		git: 'https://github.com/AnEntrypoint'
 	};
