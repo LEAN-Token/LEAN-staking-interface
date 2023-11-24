@@ -26,13 +26,14 @@
 			<a class="font-bold tracking-wide uppercase" target="_blank" href={link.explorer}>contract</a>
 		</div>
 		<span class="block text-sm text-center">
-			© 2024 LEAN INC. built by
+			© 2024 LEAN Foundation. Built by
 			<a
-				href="https://t.me/bigjaxpls"
+				style="margin-right: -3px;"
+				href="https://x.com/bigjax_eth"
 				class="text-purple-600 hover:underline dark:text-violet-500"
 			>
 				BigJax
-			</a>
+			</a>.
 		</span>
 		<div>
 			<div class="flex items-center gap-1 px-2">
