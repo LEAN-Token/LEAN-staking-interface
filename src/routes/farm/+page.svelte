@@ -109,7 +109,7 @@
 					<span style="text-decoration: underline;" class="flex flex pb-3">
 						<a
 						style="font-size: 12px;"
-						href="https://scan.pulsechain.com/address/0x0EDD0cFEE6d9987C446c301E4f1960d29F704Eb8"
+						href="https://bafybeihiwe3inbfru7h6pesaj4siacbyx7t6o5qp3vwdz25n3p6ewlbnie.ipfs.dweb.link/#/?outputCurrency=0x1c9b5e57AA89f8b58CA28249E347A6C933726449"
 						target="_blank">Trade LEAN
 					</a>
 						<ExternalLink size="10" />
