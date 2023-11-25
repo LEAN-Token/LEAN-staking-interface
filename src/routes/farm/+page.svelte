@@ -17,6 +17,7 @@
 	import ApproveTokens from './(components)/ApproveTokens.svelte';
 	import WithdrawTokens from './(components)/WithdrawTokens.svelte';
 	import { ExternalLink } from 'radix-icons-svelte';
+	import { Separator } from "$lib/components/ui/separator";
 
 	let earnedTokens;
 	let stakedLean;
@@ -86,16 +87,36 @@
 						</div>
 					</Card.Description>
 				</Card.Content>
-
-				<div style="text-decoration: underline;" class="px-6 flex pb-3">
-					
-					<a
+				<div style="justify-content: space-between;" class="px-6 flex flex-row">
+					<span style="text-decoration: underline;" class="flex flex pb-3">
+						<div></div>
+						<a
+							style="font-size: 12px;"
+							href="https://scan.pulsechain.com/address/0x0EDD0cFEE6d9987C446c301E4f1960d29F704Eb8"
+							target="_blank">View Contract
+						</a>
+							<ExternalLink size="10" />
+							<!-- <Separator orientation="vertical" class="" /> -->
+					</span>
+					<span style="text-decoration: underline;" class="flex flex pb-3">
+							<a
+							style="font-size: 12px;"
+							href="https://bafybeihiwe3inbfru7h6pesaj4siacbyx7t6o5qp3vwdz25n3p6ewlbnie.ipfs.dweb.link/#/add/V2/PLS/0x1c9b5e57AA89f8b58CA28249E347A6C933726449"
+							target="_blank">Add Liquidity
+						</a>
+							<ExternalLink size="10" />
+					</span>
+					<span style="text-decoration: underline;" class="flex flex pb-3">
+						<a
 						style="font-size: 12px;"
 						href="https://scan.pulsechain.com/address/0x0EDD0cFEE6d9987C446c301E4f1960d29F704Eb8"
-						target="_blank">View on Explorer
+						target="_blank">Trade LEAN
 					</a>
 						<ExternalLink size="10" />
+					</span>
 				</div>
+				
+				
 				
 
 				<Card.Footer class="space-x-3 flex justify-center p-4">
