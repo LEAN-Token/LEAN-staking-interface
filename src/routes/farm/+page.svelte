@@ -18,6 +18,12 @@
 	import WithdrawTokens from './(components)/WithdrawTokens.svelte';
 	import { ExternalLink } from 'radix-icons-svelte';
 	import { Separator } from "$lib/components/ui/separator";
+	import { getAccount } from '@wagmi/core'
+
+
+	const account = getAccount()
+
+
 
 	let earnedTokens;
 	let stakedLean;
@@ -56,12 +62,12 @@
 		>Stake LP Tokens to earn 💜
 	</h1>
 	<div class="h-10 md:h-20" />
-	<Tabs.Root value="pour" class="w-96 mb-10">
+	<Tabs.Root value="earn" class="w-96 mb-10">
 		<Tabs.List class="grid w-full grid-cols-2 ">
-			<Tabs.Trigger value="pour">Earn LEAN 💜</Tabs.Trigger>
+			<Tabs.Trigger value="earn">Earn LEAN 💜</Tabs.Trigger>
 			<Tabs.Trigger value="null">Pools</Tabs.Trigger>
 		</Tabs.List>
-		<Tabs.Content value="pour">
+		<Tabs.Content value="earn">
 			<Card.Root class="backdrop-blur w-96">
 				<Card.Header class="p-5">
 					<h1 class="text-3xl font-bold">STAKE</h1>
@@ -69,13 +75,21 @@
 				</Card.Header>
 				<Card.Content>
 					<Card.Description>
-						<GetContractData />
+
+						{#if account.isConnected}
+							<GetContractData />
+							<script>
+								console.log();("true");
+							</script>
+						{/if}
+						
 						<div class="flex flex-row">
 							<div class="flex justify-center flex-col font-dm text-sm font-medium">
 								<p class="px-2">LEAN Earned:<br />{earnedTokens}</p>
 								<p class="px-2">LEAN/WPLS LP Staked:<br />{stakedLean}</p>
 								<p class="px-2">LEAN Balance:<br />{leanBalance}</p>
 								<p class="px-2">LP Balance:<br />{lpBalance}</p>
+								<p>{account.isConnected}</p>
 								<!-- <p class="px-2">50000000</p> total -->
 								<!-- <Progress value={earnedTokens} max={50000000} /> -->
 								<!-- <div style="justify-content:space-between;" class="flex">
@@ -92,7 +106,7 @@
 						<div></div>
 						<a
 							style="font-size: 12px;"
-							href="https://scan.pulsechain.com/address/0x0EDD0cFEE6d9987C446c301E4f1960d29F704Eb8"
+							href="https://bafybeicjuszlj6w3gg5mfszvo7z6ux4iaafhw62vfyfw27nm65bexodov4.ipfs.dweb.link/#/address/0x0EDD0cFEE6d9987C446c301E4f1960d29F704Eb8"
 							target="_blank">View Contract
 						</a>
 							<ExternalLink size="10" />

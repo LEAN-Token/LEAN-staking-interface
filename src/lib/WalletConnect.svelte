@@ -1,6 +1,10 @@
 <script>
 import { createWeb3Modal, defaultWagmiConfig } from '@web3modal/wagmi'
-import { pulsechain } from 'viem/chains' 
+import { pulsechain } from 'viem/chains'
+
+
+
+
 
 // import { writeContract } from '@wagmi/core'
 // import { contractABI } from './contractABI.json'
@@ -77,3 +81,4 @@ const modal = createWeb3Modal({
 <!-- <button on:click={} class="rounded-md bg-gradient-to-br from-fuchsia-500 to-pink-500 px-3 py-1.5 font-dm text-sm font-medium text-white shadow-md shadow-pink-400/50 transition-transform duration-200 ease-in-out hover:scale-[1.03]">
                     Connect Wallet
 </button> -->
+
