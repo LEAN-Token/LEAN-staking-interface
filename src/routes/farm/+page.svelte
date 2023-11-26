@@ -76,12 +76,12 @@
 				<Card.Content>
 					<Card.Description>
 
-						{#if account.isConnected}
+						<!-- {#if account.isConnected}
 							<GetContractData />
 							<script>
 								console.log();("true");
 							</script>
-						{/if}
+						{/if} -->
 						
 						<div class="flex flex-row">
 							<div class="flex justify-center flex-col font-dm text-sm font-medium">
