@@ -24,7 +24,7 @@
 				href="/farm"
 				class="text-xl font-bold uppercase py-2 px-4 rounded-lg bg-purple-500 border-2 border-transparent text-md mr-4 hover:bg-purple-900"
 			>
-				Enter Farms 🧑‍🌾🚜
+				Enter 🧑‍🌾🚜
 			</a>
 			<!-- <a
 				href="/paper"
