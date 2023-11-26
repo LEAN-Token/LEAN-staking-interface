@@ -18,10 +18,7 @@
 	import WithdrawTokens from './(components)/WithdrawTokens.svelte';
 	import { ExternalLink } from 'radix-icons-svelte';
 	import { Separator } from "$lib/components/ui/separator";
-	import { getAccount } from '@wagmi/core'
 
-
-	const account = getAccount()
 
 
 
@@ -89,7 +86,6 @@
 								<p class="px-2">LEAN/WPLS LP Staked:<br />{stakedLean}</p>
 								<p class="px-2">LEAN Balance:<br />{leanBalance}</p>
 								<p class="px-2">LP Balance:<br />{lpBalance}</p>
-								<p>{account.isConnected}</p>
 								<!-- <p class="px-2">50000000</p> total -->
 								<!-- <Progress value={earnedTokens} max={50000000} /> -->
 								<!-- <div style="justify-content:space-between;" class="flex">
