@@ -9,7 +9,8 @@
 		tokensEarned,
 		tokenBalance,
 		tokensStaked,
-		lpTokenBalance
+		lpTokenBalance,
+		tokenEmissionPerSec
 	} from './(components)/contractData';
 	import StakeTokens from './(components)/StakeTokens.svelte';
 	import GetContractData from './(components)/GetContractData.svelte';
@@ -18,14 +19,14 @@
 	import WithdrawTokens from './(components)/WithdrawTokens.svelte';
 	import { ExternalLink } from 'radix-icons-svelte';
 	import { Separator } from "$lib/components/ui/separator";
-
-
-
+	import { ethers } from 'ethers';
+	import { BigNumber } from 'bignumber.js';
 
 	let earnedTokens;
 	let stakedLean;
 	let leanBalance;
 	let lpBalance;
+	let emissionsPerDay;
 
 	tokensEarned.subscribe((earned) => {
 		earnedTokens = earned;
@@ -39,6 +40,12 @@
 	lpTokenBalance.subscribe((tokens) => {
 		lpBalance = tokens;
 	});
+	tokenEmissionPerSec.subscribe((tokens) => {
+		// emissionsPerToken = (tokens * 86400);
+		// let BN = new BigNumber(tokens);
+		// emissions = BN.times(86400);
+		emissionsPerDay = (tokens * 86400);
+	})
 
 	const glass =
 		'relative flex flex-col h-screen items-center backdrop-blur';
@@ -92,7 +99,7 @@
 									<p>0</p>
 									<p>100,000,000</p>
 								</div> -->
-								<p class="px-2">End Date:<br /> 20/03/2024</p>
+								<p class="px-2">Total Rewards Per Day:<br />{emissionsPerDay} LEAN</p>
 							</div>
 						</div>
 					</Card.Description>

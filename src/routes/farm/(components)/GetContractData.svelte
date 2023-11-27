@@ -2,14 +2,16 @@
 import { onMount } from 'svelte';
 import { readContract } from '@wagmi/core'
 import { ethers } from 'ethers';
-import { tokensEarned, tokensStaked, tokenBalance, lpTokenBalance } from './contractData';
+import { tokensEarned, tokensStaked, tokenBalance, lpTokenBalance, tokenEmissionPerSec } from './contractData';
 import { getAccount } from '@wagmi/core'
+
 
 const account = getAccount()
 let Data
 let stakedBalance
 let leanBalance
 let lpBalance
+let emissionsPerToken
 
 onMount(async () => {
 
@@ -89,6 +91,25 @@ onMount(async () => {
 
     lpBalance = ethers.formatEther(lpBal)
     lpTokenBalance.update(tokens => lpBalance);
+
+    const emissionPer = await readContract({
+        address: '0x0EDD0cFEE6d9987C446c301E4f1960d29F704Eb8',
+        abi: [
+                {
+                    name: 'rewardRate',
+                    type: 'function',
+                    stateMutability: 'view',
+                    inputs: [],
+                    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
+                },
+            ],
+        functionName: 'rewardRate',
+        // args: [account.address],
+        chainId: 369
+    })
+
+    emissionsPerToken = ethers.formatEther(emissionPer);
+    tokenEmissionPerSec.update(tokens => emissionsPerToken);
 })
 </script>
 
