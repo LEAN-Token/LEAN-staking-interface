@@ -101,6 +101,9 @@
 								</div> -->
 								<p class="px-2">Total Rewards Per Day:<br />{emissionsPerDay} LEAN</p>
 							</div>
+							<div class="flex flex-col font-dm text-sm font-medium">
+								<p class="px-2">End Date:<br />20/03/2024</p>
+							</div>
 						</div>
 					</Card.Description>
 				</Card.Content>
