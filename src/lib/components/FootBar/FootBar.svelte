@@ -14,6 +14,7 @@
 	};
 </script>
 
+
 <footer class={headStyle}>
 	<div class="flex flex-col container items-center">
 		<a href="/" class="inline-flex items-center">
