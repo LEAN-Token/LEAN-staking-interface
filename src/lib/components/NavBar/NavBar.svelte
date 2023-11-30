@@ -25,6 +25,7 @@
 	const logoAltText = 'LEAN';
 </script>
 
+
 <header class={headStyle}>
 	<div class="container flex h-14 items-center">
 		<div class="mr-4 hidden md:flex">
