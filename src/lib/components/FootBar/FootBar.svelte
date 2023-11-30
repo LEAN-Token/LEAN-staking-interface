@@ -27,7 +27,14 @@
 			<a class="font-bold tracking-wide uppercase" target="_blank" href={link.explorer}>contract</a>
 		</div>
 		<span class="block text-sm text-center">
-			© 2024 LEAN Foundation. Built by
+			© 2024 
+			<a
+				style="margin-right: -3px;"
+				href="https://leantoken.org/"
+				class="text-purple-600 hover:underline dark:text-violet-500"
+			>
+				LEAN
+			</a>. Built by
 			<a
 				style="margin-right: -3px;"
 				href="https://x.com/bigjax_eth"
