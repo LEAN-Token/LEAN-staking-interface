@@ -17,7 +17,7 @@
 	const navItem =
 		'pt-1.5 font-dm text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60';
 
-	const chartLink = 'https://www.geckoterminal.com/pulsechain/pools/0x9961c2652b301c4a25256db05316d2be11cebab1';
+	const chartLink = 'https://dexscreener.com/pulsechain/0x9961c2652b301c4a25256db05316d2be11cebab1';
 	const teleLink = 'https://t.me/plsLEAN';
 	const cordLink = 'https://discord.gg/NRg34Rawc6';
 	const githubLink = 'https://github.com/AnEntrypoint';
