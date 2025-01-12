@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://leantoken.org/">
-      <img src="https://leantoken.org/_app/immutable/assets/logo.50fbad3f.png" height="128">
+      <img src="https://leantoken.org/favicon.png" height="128">
   </a>
 </p>
 
